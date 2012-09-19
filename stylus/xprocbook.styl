@@ -1,6 +1,41 @@
+//
+//  The `@css{...}` isn't really necessary.
+//  It just prevents (e.g.) #afa from compiling to #AAFFAA.
+//
+//  Why bother?
+//      1.  I really really really like the shorter Hex syntax
+//      2.  To get Norm to accept my pull request :-)
+//
+
+//  COLORS
+//  ----------------------------
+
+//  neutrals
+$medium-gray    =   @css{ #aaa }
+$dark-gray      =   @css{ #333 }
+
+//  R
+$medium-pink    =   @css{ #faa }
+//  O
+$light-tan      =   @css{ #ffe }
+//  Y
+$light-yellow   =   @css{ #ffa }
+//  G.
+$light-green    =   @css{ #efe }
+$medium-green   =   @css{ #afa }
+$sat-green      =   @css{ #4a4 }
+$pale-green     =   @css{ #cdc }
+//  B
+//  I
+//  V
+$light-violet   =   @css{ #fef }
+
+//  ----------------------------
+
+
 p
     &.element-syntax
-        padding: 4px
+        padding  4px
 
     &.element-syntax-declare-step
     &.element-syntax-error-vocabulary
@@ -8,115 +43,120 @@ p
     &.element-syntax-language-example
     &.element-syntax-other-step
     &.element-syntax-step-vocabulary
-        border: solid thin
+        border  solid thin
 
     &.element-syntax-declare-step
-        background-color: #fef
-    
+        background-color    $light-pink
+
     &.element-syntax-error-vocabulary
-        background-color: #ffe
-    
+        background-color    $light-tan
+
     &.element-syntax-language-construct
-        background-color: #fef
-    
+        background-color    $light-pink
+
     &.element-syntax-language-example
-        background-color: #fef
-    
+        background-color    $light-pink
+
     &.element-syntax-other-step
-        background-color: #fef
-    
+        background-color    $light-pink
+
     &.element-syntax-step-vocabulary
-        background-color: #ffe
+        background-color    $light-tan
 
 thead tr th
-    background-color: #333
-    color: white
+    background-color    $dark-gray
+    color               white
 
 h1,h2,h3,h4,h5,h6,
 .toc p
-    font-family: sans-serif
+    font-family     sans-serif
 
 h2 .refname tt
-    font-family: sans-serif
+    font-family     sans-serif
 
 .programlisting
 .screen
-    padding-top: 0
-    padding-bottom: 0
-    border: solid thin #cdc
-    background-color: #efe
+    padding-top         0
+    padding-bottom      0
+    border              solid thin $pale-green
+    background-color    $light-green
 
-    & pre
-        padding-top: 0
-        padding-bottom: 0
-        margin-top: 0
-        margin-bottom: 0
+    pre
+        padding-top     0
+        padding-bottom  0
+        margin-top      0
+        margin-bottom   0
 
 span.linenumber
-    background-color: #cdc
+    background-color  $pale-green
 
 .admonition
-    padding: 10px
-    border: solid thin #cdc
+    padding     10px
+    border      solid thin $pale-green
 
-    & h3
-        font-size: normal
+    h3
+        font-size   normal
 
 span
 div
     &.diff
-        background-color: #ffa
+        background-color    $light-yellow
 
     &.add
-        background-color: #afa
+        background-color    $medium-green
 
     &.orig
-        background-color: #ffa
+        background-color    $light-yellow
 
     &.del
-        background-color: #faa
-        text-decoration: line-through
+        background-color    $medium-pink
+        text-decoration     line-through
 
 div.line
-    font-family: monospace
-    white-space: pre
+    font-family  monospace
+    white-space  pre
 
 table.pipelineexample
-    margin-top: 0.5em
+    margin-top  0.5em
 
 .exlink
-    text-align: right
-    padding-right: 45px
-    padding-top: 2px
-    padding-bottom: 4px
+    text-align      right
+    padding-right   45px
+    padding-top     2px
+    padding-bottom  4px
 
     a
     a:visited
-        color: black
-        text-decoration: none
-        font-family: sans-serif
-        font-size: small
+        color           black
+        text-decoration none
+        font-family     sans-serif
+        font-size       small
 
-.atteq
-.attq
-.colon
-.mso
-.msc
-    
+/*  Pretty printing     */
+
+@css {
+.atteq  {}
+.attq   {}
+.colon  {}
+.mso    {}
+.msc    {}
+}
 
 .nsdecl
     &
     .tag-attribute
     .tag-attvalue
-        color: #aaa
+        color   $medium-gray
 
 .pcdata
-    color: #4a4
+    color   $sat-green
 
-pre
-    .tag-attribute
-    .tag-attvalue
-    .tag-element
-    .tag-localname
-    .tag-prefix
-        
+
+//pre
+//    .tag-attribute
+//    .tag-attvalue
+//    .tag-element
+//    .tag-localname
+//    .tag-prefix
+
+/*  /Pretty printing    */
