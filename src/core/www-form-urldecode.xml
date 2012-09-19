@@ -96,7 +96,9 @@ name is not a valid XML name (without a colon).
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/www-form-urldecode.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/www-form-urldecode.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

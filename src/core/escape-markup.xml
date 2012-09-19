@@ -57,7 +57,9 @@ the escaped result.</para>
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/escape-markup.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/escape-markup.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

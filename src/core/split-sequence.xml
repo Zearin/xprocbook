@@ -53,7 +53,9 @@ number of documents in the sequence.</para>
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/split-sequence.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/split-sequence.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

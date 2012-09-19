@@ -84,7 +84,9 @@ not appropriate for that algorithm.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/hash.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/hash.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

@@ -45,7 +45,9 @@ is in a namespace. In other words, the <att>name</att> on the
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/parameters.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/parameters.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

@@ -90,7 +90,9 @@ nodes.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/wrap.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/wrap.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

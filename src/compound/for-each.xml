@@ -32,7 +32,9 @@
 
 <para>…</para>
 <!--
-<xi:include href="build/.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 -->
 
 </refsection>

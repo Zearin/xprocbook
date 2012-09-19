@@ -123,7 +123,9 @@ if the absolute <option>path</option> does not specify a directory.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/directory-list.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/directory-list.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

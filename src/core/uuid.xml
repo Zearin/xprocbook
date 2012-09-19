@@ -75,7 +75,9 @@ if the processor does not support the specified
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/uuid.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/uuid.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

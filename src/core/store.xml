@@ -82,7 +82,9 @@ specified location.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/store.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/store.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

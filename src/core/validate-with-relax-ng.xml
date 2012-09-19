@@ -87,7 +87,9 @@ and the input document is not valid.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/validate-with-relax-ng.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/validate-with-relax-ng.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

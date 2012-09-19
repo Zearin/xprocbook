@@ -114,7 +114,9 @@ if any attempt is made to construct a namespace declaration using the
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/add-attribute.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/add-attribute.xml" xpointer="xpath(/*/*)">
+    <xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

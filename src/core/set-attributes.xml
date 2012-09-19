@@ -74,7 +74,9 @@ element nodes.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/set-attributes.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/set-attributes.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 </refsection>
 </refentry>
 

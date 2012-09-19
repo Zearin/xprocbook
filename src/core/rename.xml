@@ -107,7 +107,9 @@ a processing instruction and the new name has a non-null namespace.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/rename.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/rename.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

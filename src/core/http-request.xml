@@ -470,7 +470,9 @@ hosted at <link xlink:href="http://tests.xproc.org/"/>. These services were
 designed to help test various aspects of the <step>p:http-request</step> step.
 As such, they tend to be small and simple, if not particularly useful.</para>
 
-<xi:include href="build/http-request.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/http-request.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

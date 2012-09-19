@@ -40,7 +40,9 @@ one or more of the branches of the choice to “do nothing”.</para>
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/identity.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/identity.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

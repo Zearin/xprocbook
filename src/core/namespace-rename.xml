@@ -151,7 +151,9 @@ the value of either the <option>from</option> option or the
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/namespace-rename.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/namespace-rename.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

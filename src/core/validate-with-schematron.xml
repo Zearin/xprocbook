@@ -73,7 +73,9 @@ and any Schematron assertions fail.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/validate-with-schematron.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/validate-with-schematron.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

@@ -63,7 +63,9 @@ if the <option>match</option> pattern matches anything other than element
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/unwrap.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/unwrap.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

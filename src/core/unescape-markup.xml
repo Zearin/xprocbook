@@ -119,7 +119,9 @@ character set is not supported by the implementation.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/unescape-markup.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/unescape-markup.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

@@ -99,7 +99,9 @@ anything other than an element node.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/label-elements.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/label-elements.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

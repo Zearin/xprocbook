@@ -121,7 +121,9 @@ value that will be used for the <att>class</att> attribute.</para>
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/string-replace.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/string-replace.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 

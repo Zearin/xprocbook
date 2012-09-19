@@ -132,7 +132,9 @@ the implementation does not support the specified mode.
 <refsection>
 <title>Examples</title>
 
-<xi:include href="build/validate-with-xml-schema.xml" xpointer="xpath(/*/*)"/>
+<xi:include href="build/validate-with-xml-schema.xml" xpointer="xpath(/*/*)">
+<xi:fallback><para>…</para></xi:fallback>
+</xi:include>
 
 </refsection>
 
